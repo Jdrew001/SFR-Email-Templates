@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Email Template</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        table {
+            border-collapse: collapse;
+            border: none;
+        }
+        .header {
+            text-align: center;
+            padding: 10px 0;
+        }
+        .header img {
+            max-width: 100%;
+            margin-bottom: 15px;
+        }
+        .content h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            background-color: rgb(9, 26, 59);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .content h3.sub {
+            text-align: center;
+        }
+        .date-container {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .date-container td {
+            width: 50%;
+            padding: 10px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .light {
+            color: rgb(75,75,75) !important;
+        }
+        .border-content {
+            border: 1px solid rgba(9, 26, 59, 0.4);
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .border-content h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .border-content p {
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        .button {
+            text-decoration: none !important;
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 14px;
+            margin: 5px;
+        }
+        .button.primary {
+            background-color: rgb(9, 26, 59);
+            color: white !important;
+            border: 1px solid rgb(9, 26, 59) !important;
+        }
+        .button.secondary {
+            background-color: transparent;
+            color: rgb(9, 26, 59) !important;
+            border: 1px solid rgb(9, 26, 59);
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #555;
+            text-align: center;
+        }
+        .footer a {
+            color: rgb(9, 26, 59);
+            text-decoration: none;
+        }
+        @media only screen and (max-width: 750px) {
+            table {
+                width: 100% !important;
+            }
+        }
+
+
+        /* Force light mode for Apple Mail and WebKit-based clients */
+        @media (prefers-color-scheme: dark) {
+            body, .email-container {
+                background-color: #ffffff !important;
+                color: #000000 !important;
+            }
+            a {
+                color: #007BFF !important; /* Ensure links remain visible */
+            }
+        }
+
+        /* Specific targeting for Outlook.com (Web) */
+        [data-ogsc] body, 
+        [data-ogsc] .email-container {
+            background-color: #ffffff !important;
+            color: #000000 !important;
+        }
+
+        /* Specific targeting for Gmail dark mode */
+        u + #body a, 
+        u + #body span, 
+        u + #body div {
+            background-color: #ffffff !important;
+            color: #000000 !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <!-- Header Section -->
+        <div class="header">
+            <table style="width: 85%; margin: auto">
+                <tr>
+                    <td>
+                        <img src="https://chmeetings-app.s3.us-east-1.amazonaws.com/1738299961326-banner.jpg" alt="Logo 1">
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Content Section -->
+        <div class="content">
+            <h2>Greetings NTXD<br />Spiritual First Responders!</h2>
+            <h3 style="text-align: center;">Mark your calendars<br>Be a part of the SFR Team coming to <strong style="text-decoration: underline;">Graham, TX!</strong></h3>
+            <br>
+            <div class="border-content">
+                <h3><strong>Your help is needed!</strong></h3>
+                <p class="light">
+                    Every SFR volunteer will have the opportunity to make a tremendous impact over the course of this three-day event. Each day will include valuable training and activities, but the <strong>Saturday March 29th event will have the greatest need for our volunteers</strong>, as we directly engage with the community of Graham!
+                </p>
+                <p class="light">
+                    Please <strong>register for the event by clicking on the link below</strong> to let us know if you are available and would like to volunteer. 
+                </p>
+                <div style="text-align: center; margin-bottom: 30px">
+                    <a href="https://9AF4623BEBD7FA6A.chmeetings.com/forms/7F3D1EDC1C590A95" class="button primary">Sign Up for Impact Weekend</a>
+                </div>
+
+                <h3 style="text-decoration: underline;"><strong>SFR Impact Agenda:</strong></h3>
+                <h3 style="font-size: 14px; margin-left: 28px"><strong>Friday, March 28th  at 7:30 pm:</strong></h3>
+                <ul style="margin-left: 28px">
+                    <li>
+                        <p class="light">Focused prayer event led by Sharetha Wheeler (Christ Pentecostal - Haltom City, TX & Evangelist Vladimir Goodrum)</p>
+                    </li>
+                    <li>
+                        <p class="light">Location: <a style="text-decoration: underline !important;" href="http://maps.apple.com/?daddr=True+Life+Church+1323+Calavares+St+Graham,+TX+76450" target="_blank"><strong>True Life Church</strong> 1323 Calavares St Graham, TX 76450</a></p>
+                    </li>
+                </ul>
+
+                <h3 style="font-size: 14px; margin-left: 28px"><strong>Saturday, March 29th:</strong></h3>
+                <ul style="margin-left: 28px">
+                    <li>
+                        <p class="light"><strong>10am - 1pm:</strong> Community Outreach (Meet at <strong>True Life Church</strong>)</p>
+                    </li>
+                    <li>
+                        <p class="light"><strong>1pm - 2pm:</strong>Setup for Impact Event</p>
+                    </li>
+                    <li>
+                        <p class="light"><strong>2pm - 4pm: Bless the Community Impact Event</strong> with Food, Bounce Houses, Giveaways, Music, Kids' ministry and Evangelist Vladimir Goodrum.</p>
+                    </li>
+                    <li>
+                        <p class="light"><strong>Location: <a style="text-decoration: underline !important;" href="http://maps.apple.com/?daddr=True+Life+Church+1323+Calavares+St+Graham,+TX+76450" target="_blank"><strong>True Life Church</strong> 1323 Calavares St Graham, TX 76450</a></p>
+                    </li>
+                </ul>
+
+                <h3 style="font-size: 14px; margin-left: 28px"><strong>Sunday, October 8th at 10:00 am:</strong></h3>
+                <ul style="margin-left: 28px">
+                    <li>
+                        <p class="light">Guest Speaker:  Evangelist Vladimir Goodrum.</p>
+                    </li>
+                    <li>
+                        <p class="light">SFR Worship Team</p>
+                    </li>
+                    <li>
+                        <p class="light">Location: <a style="text-decoration: underline !important;" href="http://maps.apple.com/?daddr=True+Life+Church+1323+Calavares+St+Graham,+TX+76450" target="_blank"><strong>True Life Church</strong> 1323 Calavares St Graham, TX 76450</a></p>
+                    </li>
+                </ul>
+
+                <h3 class="light" style="font-size: 14px;margin-top: 45px">Find out more about <strong style="color: black; font-weight: 700;">True Life Church</strong> on Facebook <a href="https://www.facebook.com/tlcofgraham/">https://www.facebook.com/tlcofgraham/</a></h3>
+                <h3 class="light" style="font-size: 14px;">See you in Graham!</h3>
+                <h3 class="light" style="font-size: 14px;">God Bless,</h3>
+                <h3 class="light" style="font-size: 14px;"><strong style="color: black; font-weight: 700;">Spiritual First Responders Team</strong></h3>
+
+                <div style="text-align: center; margin: 30px 0px;">
+                    <a href="https://9AF4623BEBD7FA6A.chmeetings.com/forms/7F3D1EDC1C590A95" class="button primary">Sign Up for Impact Weekend</a>
+                </div>
+            </div>
+            <br>
+            <div style="text-align: center; margin-top: 20px;">
+                <a href="https://form.jotform.com/220944810814151" class="button primary" style="display: inline-block;">
+                    <span style="display: inline-block; vertical-align: middle;">SFR Information</span>
+                </a>
+                <a href="https://youtu.be/CquJjvTD0Kk" class="button secondary" style="display: inline-block;">
+                    <span style="display: inline-block; vertical-align: middle;">SFR Promo</span>
+                </a>
+            </div>
+        </div>
+        <br><br>
+        <!-- Footer Section -->
+        <div class="footer">
+            <p><strong>Spiritual First Responders</strong>, North Texas District UPCI</p>
+            <p>Email: <a href="mailto:gwheeler@christpentecostal.org">SFR Mail</a> | Phone: 817.271.9395</p>
+        </div>
+    </div>
+</body>
+</html>
